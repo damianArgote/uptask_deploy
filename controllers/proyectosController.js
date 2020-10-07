@@ -92,7 +92,7 @@ const formularioEditar =async (req,res) =>{
     
     const proyectoPromise =  Proyectos.findOne({
         where:{
-            url:req.params.url,
+            id:req.params.id,
             usuarioId
         }
     });
